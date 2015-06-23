@@ -8,7 +8,7 @@ body                  { font: 16px Georgia, serif; }
 section > div         { padding: 20px; }
 header, nav, section  { background: #eee; text-align: center; }
 footer                { background: #eee; text-align: center; }
-table                 { margin-left: auto; margin-right: auto; margin-top: 2em; margin-bottom: 2em;}
+table                 { margin-left: auto; margin-right: auto; margin-top: 1em; margin-bottom: 1em;}
 nav span              { margin: 0px 10px 0px 0px; }
 
 #ErrorMsgs            { color: #f61; font-size: smaller; }
