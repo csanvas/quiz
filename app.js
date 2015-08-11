@@ -11,6 +11,8 @@ var session = require('express-session');
 var routes = require('./routes/index');
 //var users = require('./routes/users');
 
+var sessionController = require('./controllers/session_controller');
+
 var app = express();
 
 // view engine setup
@@ -40,6 +42,9 @@ app.use(function(req, res, next) {
   res.locals.session = req.session;
   next();
 });
+
+// Check inactividad
+app.use(sessionController.autoLogout);
 
 app.use('/', routes);
 //app.use('/users', users);
