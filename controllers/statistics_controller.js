@@ -23,30 +23,3 @@ exports.show = function(req, res, next) {
 
 };
 
-//    models.Comment.find({attributes: [Sequelize.literal('count(DISTINCT `publicado`)')]})
-
-//    models.Comment.count({distinct: true, attributes: ['publicado']})
-
-//    models.Comment.count({distinct: true, attributes: 'publicado'})
-
-//    models.Quiz.count({distinct: true,  include: [{ model: models.Comment}]})
-
-//    models.Comment.count({distinct: Sequelize.col('publicado')})
-
-//    models.Comment.count({distinct: 'publicado'})
-
-//    models.Comment.count({distinct: 'quiz_fk', where: {quiz_fk: {$ne: null}}})
-
-
-//MyModel.count({distinct: 'someColumn', where: {...}})
-//.complete(function(err, count) {
-    // count is an integer
-//});
-
-
-//sequelize.fn('DISTINCT', sequelize.col('id'))
-//    models.Comment.count(Sequelize.fn('DISTINCT', Sequelize.col('quiz_fk')))
-
-//{attributes [Sequelize.fn('DISTINCT', Sequelize.col('quiz_fk'))]}
-//    models.Comment.count({attributes: Sequelize.fn('DISTINCT', Sequelize.col('quiz_fk'))})
-
