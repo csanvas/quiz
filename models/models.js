@@ -35,7 +35,7 @@ var comment_path = path.join(__dirname,'comment');
 var Comment = sequelize.import(comment_path);
 
 // Relaciones
-Comment.belongsTo(Quiz);
+Comment.belongsTo(Quiz, {foreignKey: 'quiz_fk'});
 Quiz.hasMany(Comment);
 
 // Exportar definición de tablas
